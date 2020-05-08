@@ -26,22 +26,26 @@
 > 修改 `~/.pip/pip.conf`
 
 根据个人使用经验，有些朋友没有这个文件，甚至没有这个目录，这个时候我们先创建这个目录然后创建这个文件进行编写：
+
 ```
 # 创建目录
 mkdir ~/.pip
 # 创建并编辑文件
 vim ~/.pip/pip.conf
 ```
+
 将文件中的内容填写或者修改为下面的内容：
+
 ```
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
 index-url指的是需要更换的下载源，上面已经提供了很多的下载源了，可以直接填进去。
 填写后按ESC，输入wq! ,保存退出。
 此时去使用pip下载东西，使用的是清华源了。
 
-![IMAGE](resources/DD464A9BF070707546D229E55FFF83E4.jpg =1132x206)
+![IMAGE](resources/DD464A9BF070707546D229E55FFF83E4.jpg)
 
 ### 2. Windows
 #### 2.1 临时使用
@@ -54,10 +58,12 @@ index-url指的是需要更换的下载源，上面已经提供了很多的下�
 1. 直接在user目录中创建一个pip目录，如：C:\Users\xxx\pip
 2. 新建文件pip.ini
 3. 输入以下内容：
+
 ```
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
 这样就OK了！
 
 ## pycharm修改下载源
@@ -65,18 +71,18 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 1. 进入设置
 
-![IMAGE](resources/6480AE195E1DB693B35186BC436CA4F7.jpg =1080x758)
+![IMAGE](resources/6480AE195E1DB693B35186BC436CA4F7.jpg)
 
 2. 到达上图界面,随意双击任意一个库
 
-![IMAGE](resources/50FC81EC21FF1752656BFE709CB483C4.jpg =1080x758)
+![IMAGE](resources/50FC81EC21FF1752656BFE709CB483C4.jpg)
 
 3. 到达下面这个界面后，点击Manage Repositories
 
-![IMAGE](resources/0504EED44866CE3EF3C1C38145571409.jpg =1080x872)
+![IMAGE](resources/0504EED44866CE3EF3C1C38145571409.jpg)
 
 4. 添加下载源地址
 
-![IMAGE](resources/71ACCAEF79F2E5D29E76FA5081D9ED61.jpg =1080x893)
+![IMAGE](resources/71ACCAEF79F2E5D29E76FA5081D9ED61.jpg)
 
 这样就可以将pycharm的下载源更换为国内下载源。

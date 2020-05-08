@@ -35,6 +35,7 @@ PowerLine官网地址：[PowerLine官网](https://powerline.readthedocs.io/en/la
 
 选择一个目录，新建一个文件夹，如：~/OpenSource 。
 在此文件夹下执行 `git clone` 命令：
+
 ```
 # git clone
 > git clone https://github.com/powerline/fonts.git --depth=1
@@ -43,14 +44,16 @@ PowerLine官网地址：[PowerLine官网](https://powerline.readthedocs.io/en/la
 # run install shell
 > ./install.sh
 ```
+
 字体库安装完成后，设置iTerm2的字体，具体的操作是iTerm2 -> Preferences -> Profiles -> Text，在Font区域选中Change Font，然后找到Meslo LG字体。有L、M、S可选，看个人喜好选择。
 
-![IMAGE](resources/823393CDAFA2DDBA85D0951C91BFE662.jpg =1860x958)
+![IMAGE](resources/823393CDAFA2DDBA85D0951C91BFE662.jpg)
 
 ## 安装配色方案
 > 配色方案在使用VIM或Colorful Log时会变得非常有用，同时界面也不会一片黑绿一样死板。
 
 同样使用git clone的方式下载源码进行安装：
+
 ```
 > cd ~/OpenSource
 > git clone https://github.com/altercation/solarized
@@ -58,13 +61,14 @@ PowerLine官网地址：[PowerLine官网](https://powerline.readthedocs.io/en/la
 # 打开当前文件夹
 open .
 ```
+
 在打开的finder窗口中，双击Solarized Dark.itermcolors和Solarized Light.itermcolors即可安装明暗两种配色。
 
-![IMAGE](resources/8AAF5B8BE3EE427BC02360638A2F4932.jpg =2134x1528)
+![IMAGE](resources/8AAF5B8BE3EE427BC02360638A2F4932.jpg)
 
 再次进入iTerm2 -> Preferences -> Profiles -> Colors -> Color Presets中根据个人喜好选择这两种配色中的一种即可。
 
-![IMAGE](resources/750D2EEB19CEB9CFF50180E27270782C.jpg =2354x1540)
+![IMAGE](resources/750D2EEB19CEB9CFF50180E27270782C.jpg)
 
 ## 安装主题
 > 下载agnoster主题，执行脚本安装。
@@ -79,7 +83,8 @@ open .
 ```
 拷贝完成后，执行命令打开zshrc配置文件，将ZSH_THEME设置为agnoster。
 
-![IMAGE](resources/FCEAF994D588637B2F2CB96FEBC91125.jpg =1140x904)
+![IMAGE](resources/FCEAF994D588637B2F2CB96FEBC91125.jpg)
+
 
 ```
 > vim ~/.zshrc
@@ -98,13 +103,14 @@ open .
 ```
 这时再次打开zshrc文件进行编辑。找到plugins，此时plugins中应该已经有了git，我们需要把高亮插件也加上。
 
-![IMAGE](resources/583853F21B06679AF283F9B4D572A773.jpg =1140x904)
+![IMAGE](resources/583853F21B06679AF283F9B4D572A773.jpg)
 
 **注意：请务必保证插件顺序，zsh-syntax-highlighting必须在最后一个**
 
 然后在文件的最后一行添加如下内容：
 `source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
 按esc键调出vim命令，保存修改内容
+
 ```
 > :wq
 > source ~/.zshrc
@@ -112,6 +118,7 @@ open .
 
 # 安装命令补全插件
 > 跟代码高亮的安装方式一样，这也是一个zsh的插件，叫做zsh-autosuggestion，用于命令建议和补全。
+
 
 ```
 > cd ~/.oh-my-zsh/custom/plugins/
